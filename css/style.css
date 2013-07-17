@@ -5,26 +5,57 @@
 
 }
 
+
+/*header*/
+
 .main-head{
-	background: #000 url('../images/top-menu-bg.jpg') 0 0 no-repeat;
+	background: #000 url('../images/top-menu-bg.jpg') 0 0 repeat;
+}
+
+.main-head, .wrapper{
+    padding: 17px 23px;
+}
+
+
+.top-menu a, .phone, .phone a{
+	font-size: 14px;
+	font-weight: bold;
 }
 
 
 .top-menu{
 	margin:5px 0;
+	max-width: 650px;
 }
 
 .top-menu a{
-	margin-left: 15px;
+	margin: 3px 0;
 }
 
-.top-menu a:before{
-	content:".";
+.top-menu a:hover, .phone a{
+	color: #FF3D5D;
+}
+
+.top-menu a:after{
+	content: ".";
+    font-size: 28px;
+    line-height: 5px;
+    margin: 0 10px;
+    vertical-align: top;
+}
+
+.top-menu a:last-child:after{
+	content: " ";
+}
+
+.phone{
+	margin:5px 0;
+}
+
+.phone, .phone a{
+	text-transform: capitalize;
 	vertical-align: middle;
-	font-size: 18px;
-	line-height: 10px;
+
 }
 
-.top-menu:first-child:before{
-	content"";
-}
+/* THE END header*/
