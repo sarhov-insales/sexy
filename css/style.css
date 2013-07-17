@@ -1,0 +1,30 @@
+.full-wrapper{
+	outline: 1px solid #000; /*Tmep*/
+	max-width: 1004px;
+	margin: 0 auto;
+
+}
+
+.main-head{
+	background: #000 url('../images/top-menu-bg.jpg') 0 0 no-repeat;
+}
+
+
+.top-menu{
+	margin:5px 0;
+}
+
+.top-menu a{
+	margin-left: 15px;
+}
+
+.top-menu a:before{
+	content:".";
+	vertical-align: middle;
+	font-size: 18px;
+	line-height: 10px;
+}
+
+.top-menu:first-child:before{
+	content"";
+}
