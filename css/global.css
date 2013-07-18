@@ -23,6 +23,17 @@ display: table; /* 2 */
   float: right; 
 }
 
+.cb{
+  clear: both;
+}
+.cl{
+  clear: left;
+}
+
+.cr{
+  clear: right;
+}
+
 .rel{
   position: relative;
 }
@@ -70,9 +81,10 @@ color: #fff;
   border-bottom-width: 1px;
 }
 
-
-.box-title{
-  border-bottom-color: #FF4970;
+input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="tel"]{
+  height: 38px;
+  border: 1px solid #E8E8E8;
+  background: none;
 }
 
 
@@ -445,9 +457,7 @@ input[type="radio"] {
 
 input[type="search"] {
     -webkit-appearance: textfield; /* 1 */
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box; /* 2 */
-    box-sizing: content-box;
+
 }
 
 /**
