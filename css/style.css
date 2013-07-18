@@ -1,8 +1,21 @@
+html{
+	background: #333 url(../images/html-bg.jpg) 0 0 repeat;
+	height: 100%;
+}
+
+body{
+	background: #333 url('../images/body-bg.png') center 0 repeat-x;
+	 height: auto;
+    min-height: 100%;
+    padding: 0 0 80px;
+    position: relative;
+    width: 100%;
+}
+
 .full-wrapper{
 	outline: 1px solid #000; /*Tmep*/
 	max-width: 1004px;
-	margin: 0 auto;
-
+	margin: 0 auto 80px;
 }
 
 
@@ -13,7 +26,7 @@
 }
 
 .main-head, .wrapper{
-    padding: 17px 23px;
+    padding: 20px 25px;
 }
 
 
@@ -36,7 +49,7 @@
 	color: #FF3D5D;
 }
 
-.top-menu a:after{
+.top-menu a:before{
 	content: ".";
     font-size: 28px;
     line-height: 5px;
@@ -44,8 +57,9 @@
     vertical-align: top;
 }
 
-.top-menu a:last-child:after{
+.top-menu a:first-child:before{
 	content: " ";
+	margin: 0;
 }
 
 .phone{
