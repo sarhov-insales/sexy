@@ -47,12 +47,6 @@ display: table; /* 2 */
 /*--------------------------------------------------------------------theme globals*/
 
 
-body{
-  font: 13px/21px "Trebuchet MS",Arial,Helvetica,sans-serif;
-  color:#7B7A7A;
-}
-
-
 
 
 h1, h2, h3, h4, h5, h6{
@@ -76,13 +70,13 @@ color: #fff;
 
 .box-title, .title, .itme-title{
   margin:17px 0 18px;
-  padding-bottom: 20px;
+  padding: 20px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
 }
 
 input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="tel"]{
-  height: 38px;
+  padding: 10px;
   border: 1px solid #E8E8E8;
   background: none;
 }

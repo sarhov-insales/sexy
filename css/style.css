@@ -5,10 +5,11 @@ html{
 
 body{
 	background: #333 url('../images/body-bg.png') center 0 repeat-x;
-    min-height: 100%;
-    padding: 0 0 80px;
     position: relative;
-    width: 100%;height: 100%;
+    width: 100%;
+    font: 13px/21px "Trebuchet MS",Arial,Helvetica,sans-serif;
+  	color:#7B7A7A;
+  	height: 100%;
 }
 
 .full-wrapper{
@@ -16,7 +17,6 @@ body{
 	max-width: 1004px;
 	margin: 0 auto;
 	background-color: #fff;
-	height: 100%;
 }
 
 
@@ -76,11 +76,6 @@ body{
 	color: #fff                                ;
 }
 
-
-.under-head{
-	padding: 0 0 15px 0;
-}
-
 .cart{
 	margin:15px 0 0 0 ;
 	padding: 5px 5px 5px 15px;
@@ -113,6 +108,16 @@ body{
 	width: 50px;
 }
 
+.site-title a{
+	display: block;
+}
+
+.site-title img{
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+
 /* THE END header and under-head*/
 
 /*-------main menu-------*/
@@ -120,6 +125,7 @@ body{
 .main-menu{
 	background: #fff url('../images/main-menu-bg.jpg') 0 0 repeat;
 	padding: 20px;
+	margin: 10px 0;
 }
 
 .main-menu a{
@@ -133,3 +139,45 @@ body{
 	display: inline-block;
 	background-color: #9c0;
 }
+
+/*---THE END----main menu-------*/
+
+/* --------slider-------*/
+
+.slider{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.slider a, .banner a{
+	display: block;
+}
+
+.slider img, .banner img{
+	max-width: 100%;
+	height: auto;
+	width: 100%;
+	display: block;
+}
+
+.slider figcaption{
+	left:0;
+	top:0;
+}
+
+/*-------------THE END-------  slider  -*/
+
+/*-----banner------------*/
+
+.banner figure{
+	width: 49%;
+	border: 1px solid #E8E8E8;
+}
+
+
+
+
+
+
+
+/*----------THE END---------slider----*/
