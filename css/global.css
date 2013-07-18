@@ -69,7 +69,7 @@ color: #fff;
 }
 
 
-.categories a, .top-menu a, .title, .item-title, .tabs a, .box-title{
+.categories a, .top-menu a, .title, .item-title, .tabs a, .box-title, .main-menu a{
   text-transform: uppercase;
   font-size: 18px;
 }

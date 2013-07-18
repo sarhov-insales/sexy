@@ -31,7 +31,7 @@ body{
 }
 
 
-.top-menu a, .phone, .phone a{
+.top-menu a, .phone, .phone a, .main-menu a{
 	font-weight: bold;
 }
 
@@ -41,12 +41,12 @@ body{
 	max-width: 650px;
 }
 
-.top-menu a{
-	margin: 3px 0;
+.top-menu a, .main-menu a{
 	font-size: 14px;
+	 margin: 3px 10px;
 }
 
-.top-menu a:hover, .phone a{
+.top-menu a:hover, .main-menu a:hover, .phone a{
 	color: #FF3D5D;
 }
 
@@ -54,11 +54,10 @@ body{
 	content: ".";
     font-size: 28px;
     line-height: 5px;
-    margin: 0 10px;
     vertical-align: top;
 }
 
-.top-menu a:first-child:before{
+.top-menu a:first-child:before, .main-menu a:first-child:before{
 	content: " ";
 	margin: 0;
 }
@@ -77,6 +76,10 @@ body{
 	color: #fff                                ;
 }
 
+
+.under-head{
+	padding: 0 0 15px 0;
+}
 
 .cart{
 	margin:15px 0 0 0 ;
@@ -111,3 +114,22 @@ body{
 }
 
 /* THE END header and under-head*/
+
+/*-------main menu-------*/
+
+.main-menu{
+	background: #fff url('../images/main-menu-bg.jpg') 0 0 repeat;
+	padding: 20px;
+}
+
+.main-menu a{
+	color: #2A2A2A;
+}
+
+.main-menu a:before{
+	content:"";
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-color: #9c0;
+}
