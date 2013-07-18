@@ -69,7 +69,10 @@ body{
 .phone, .phone a{
 	text-transform: capitalize;
 	vertical-align: middle;
+}
 
+.phone a:hover{
+	color: #fff;
 }
 
 /* THE END header*/
