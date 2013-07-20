@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	
+	<title>Simple Loader</title>
+	
+	<style>
+		#loader{
+			position:fixed;
+			top:0;
+			left:0;
+			z-index: 9999;
+			background-color: #000;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+	
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	
+	
+	<script src="http://github.com/Modernizr/Modernizr/raw/master/modernizr.js"></script>
+	<script>
+		// Wait for window load
+		$(window).load(function() {
+			// Animate loader off screen
+			$("#loader").fadeOut();
+		});
+	</script>	
+</head>
+
+<body>
+		
+	
+	<div id="loader">
+
+	</div>
+	
+	
+	<img src="http://farm6.static.flickr.com/5299/5400751421_55d49b2786_o.jpg">
+		
+</body>
+
+</html>
