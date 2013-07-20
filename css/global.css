@@ -38,7 +38,7 @@ display: table; /* 2 */
   position: relative;
 }
 
-.aps{
+.abs{
   position: absolute;
 }
 
@@ -60,6 +60,10 @@ a{
   outline: none;
 }
 
+a:hover{
+  color: #CB2449;
+}
+
 .top-menu a, .phone, .front .new-price, .excerpt, .blog .date, .button{
 color: #fff;
 }
@@ -69,7 +73,7 @@ color: #fff;
   text-transform: uppercase;
 }
 
-.footer-box-title, .sub-footer-box-title, .title, .itme-title{
+.footer-box-title, .sub-footer-box-title, .title, .item-title{
   margin:20px 0 10px;
   padding: 20px 0;
   border-bottom-style: solid;

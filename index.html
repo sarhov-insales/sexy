@@ -8,10 +8,12 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link id="base-css" rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="web_icons.css">
     <link rel="stylesheet" href="css/media.css">
     <script src="js/libs/modernizr-2.6.2.min.js"></script>
+
+
 </head>
 <body class="cf">
     
@@ -21,12 +23,12 @@
 
         <nav class="top-menu fl">
             <menu class="cf">
-                <a href="index.html"  class="fl">главная</a>
-                <a href="categroy.html" class="fl">категория</a>
-                <a href="cart.html" class="fl">корзина</a>
-                <a href="item.html" class="fl">товар</a>
-                <a href="blog.html" class="fl">блог</a>
-                <a href="article.html" class="fl">статья</a>
+                <a href="index.html"  class="fl" data-icon="&#xe024;">главная</a>
+                <a href="categroy.html" class="fl" data-icon="&#xe024;">категория</a>
+                <a href="cart.html" class="fl" data-icon="&#xe024;">корзина</a>
+                <a href="item.html" class="fl" data-icon="&#xe024;">товар</a>
+                <a href="blog.html" class="fl" data-icon="&#xe024;">блог</a>
+                <a href="article.html" class="fl" data-icon="&#xe024;">статья</a>
             </menu>
         </nav> <!-- top-menu -->
         
@@ -42,8 +44,8 @@
                         <img src="images/logo.png" alt="" alt="" title="" width="351" height="81">
                     </a>
                 </h1>
-                <div class="cart fr">
-                    <div class="cart-inner">
+                <div class="cart fr" >
+                    <div class="cart-inner" data-icon="&#xe000;">
                         Корзина:
                         <span class="cart_items_count"> 1 </span>
                     </div>
@@ -51,19 +53,19 @@
                 <div class="search-box rel fr cr">
                     <form class="searchform" method="get" action="/search">
                     <input class="txt" type="search" onblur="if(this.value==''){this.value=this.defaultValue;}" onfocus="if(this.value==this.defaultValue){this.value='';}" value="Поиск" name="q">
-                    <span class="aps s-submit"><input type="submit" value=""></span>
+                    <span class="abs s-submit" data-icon="&#xe046;"><input type="submit" value=""></span>
                     </form>
                 </div> <!-- search box -->
             </div> <!-- under-head -->
 
             <nav class="main-menu cb cf">
                 <menu class="cf">
-                    <a href="index.html" class="fl">главная</a>
-                    <a href="index.html" class="fl">о нас</a>
-                    <a href="index.html" class="fl">магазин</a>
-                    <a href="index.html" class="fl">популярные</a>
-                    <a href="index.html" class="fl">документация</a>
-                    <a href="index.html" class="fl">стрница не найдена</a>
+                    <a href="index.html" class="fl" data-icon="&#xe018;">главная</a>
+                    <a href="index.html" class="fl" data-icon="&#xe018;">о нас</a>
+                    <a href="index.html" class="fl" data-icon="&#xe018;">магазин</a>
+                    <a href="index.html" class="fl" data-icon="&#xe018;">популярные</a>
+                    <a href="index.html" class="fl" data-icon="&#xe018;">документация</a>
+                    <a href="index.html" class="fl" data-icon="&#xe018;">стрница не найдена</a>
                 </menu>
             </nav>  <!--  main menu -->
 
@@ -72,7 +74,7 @@
                     <a href="index.html">
                         <img src="images/slide.jpg" alt="" width="952" height="400">
                     </a>
-                    <figcaption class="aps">Слайдер</figcaption>
+                    <figcaption class="abs">Слайдер</figcaption>
                 </figure>
             </div>  <!-- slider -->
 
@@ -105,8 +107,12 @@
                             <span>450 руб</span>
                         </div>
                         <div class="add-but fr">
-                            <a href="">add to cart</a>
-                            <a href=""></a>
+                            <a href="" class="addToCart fl rel" data-icon="&#xe013;">
+                                <span>в корзину</span>
+                            </a>
+                            <a href="" class="addToMore fl rel" data-icon="&#xe00a;">
+                                <span>подробнее</span>
+                            </a>
                         </div>   
                     </div> <!-- box-item-buy -->
                     </article> <!-- box -->

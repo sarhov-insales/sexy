@@ -1,3 +1,26 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
 html{
 	background: #333 url(../images/html-bg.jpg) 0 0 scroll repeat;
 }
@@ -32,6 +55,7 @@ body{
 
 .top-menu a, .phone, .phone a, .main-menu a{
 	font-weight: bold;
+	position: relative;
 }
 
 
@@ -42,7 +66,9 @@ body{
 
 .top-menu a, .main-menu a{
 	font-size: 14px;
-	 margin: 3px 10px;
+	 margin: 3px 3px 3px 0;
+	 padding-left: 20px;
+	 position: relative;
 }
 
 .top-menu a:hover, .main-menu a:hover, .phone a{
@@ -50,15 +76,27 @@ body{
 }
 
 .top-menu a:before{
-	content: ".";
-    font-size: 28px;
-    line-height: 5px;
-    vertical-align: top;
+	color: #fff;
+    display: inline-block;
+    font-size: 7px;
+    left: 4px;
+    margin-right: 9px;
+    position: absolute;
+    top: 7px;
+    	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-ms-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	transition: all 0.4s linear;
 }
+
+
 
 .top-menu a:first-child:before, .main-menu a:first-child:before{
 	content: " ";
 	margin: 0;
+	visibility: hidden;
+	display: none;
 }
 
 .phone{
@@ -91,6 +129,16 @@ body{
 	font-weight: bold;
 }
 
+.cart-inner:before{
+	color: #f00;
+	font-size: 25px;
+}
+
+.cart-inner:hover:before{
+	color: #333;
+	text-shadow: 0 0 1px #826565;
+}
+
 .cart-innet > .cart_items_count{
 	color: #000;
 }
@@ -100,17 +148,40 @@ body{
 }
 
 .search-box input[type="search"]{
-	width: 250px;
+	width: 300px;
+}
+
+.search-box input[type="submit"]{
+    display:block;
+    height:100%;
+    width:100%;
+    background:none;
+    border:none;
+    position: relative;
+    z-index: 3;
+}
+
+.s-submit:hover:before{
+	text-shadow:0 0 1px #826565;
 }
 
 .s-submit{
 	top:0;
 	right: 0;
-	background-color: #9c0;
 	display: inline-block;
 	height: 100%;
 	width: 50px;
 }
+
+.s-submit:before{
+	color: #000000;
+    font-size: 27px;
+    left: 15px;
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+}
+
 
 .site-title a{
 	display: block;
@@ -135,15 +206,39 @@ body{
 
 .main-menu a{
 	color: #2A2A2A;
+	padding: 3px;
+	position: relative;
+	padding-left: 20px;
+	display: block;
+}
+
+.main-menu a:hover:before, .top-menu a:hover:before{
+	color: #9c0;
+	-webkit-transform: rotate(365deg);
+	-moz-transform: rotate(365deg);
+	-ms-transform: rotate(365deg);
+	-o-transform: rotate(365deg);
+	transform: rotate(365deg);
+	text-shadow: 0 0 10px #9c0;
 }
 
 .main-menu a:before{
-	content:"";
-	width: 20px;
-	height: 20px;
-	display: inline-block;
-	background-color: #9c0;
+	  color: #FF0000;
+    display: inline-block;
+    font-size: 7px;
+    left: 4px;
+    margin-right: 9px;
+    position: absolute;
+    top: 10px;
+    vertical-align: middle;
+    	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-ms-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+
 }
+
 
 /*---THE END----main menu-------*/
 
@@ -243,10 +338,145 @@ body{
 }
 
 .box-item-buy{
-	padding: 10px;
+	
 	background-color: #000;
 	width: 100%;
 	height: 100%;
+}
+
+.add-but a{
+    display: block;
+    height: 40px;
+    width: 40px;
+}
+
+.add-but a span{
+	position: absolute;
+	bottom:-100%;
+	width: 200%;
+	left:0;
+}
+
+.add-but .addToCart{
+	
+}
+
+.add-but .addToCart:before{
+	background-color: #70051F;
+    color: #FFFFFF;
+    font-size: 22px;
+    height: 100%;
+    left: 0;
+    padding: 10px 0 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    -webkit-transition: all 0.3s ;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s ;
+    -o-transition: all 0.3s ;
+    transition: all 0.3s ;
+}
+
+.add-but .addToCart:after{
+	visibility: hidden;
+		font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	background-color: #CD2549;
+    color: #FFFFFF;
+    font-size: 22px;
+    height: 100%;
+    left: 40px;
+    padding: 10px 0 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    -webkit-transition: left 0.3s ;
+    -moz-transition: left 0.3s ;
+    -ms-transition: left 0.3s ;
+    -o-transition: left 0.3s ;
+    transition: left 0.3s ;
+}
+
+.addToCart:hover:before{
+	left: -100px;
+	visibility: hidden;
+}
+
+.addToCart:hover:after{
+	left: 0;
+	visibility: visible;
+}
+
+
+.box-item-price{
+	color: #FFFFFF;
+    font-size: 18px;
+    padding: 10px;
+}
+
+
+.add-but .addToMore:before{
+	background-color: #000;
+    color: #FFFFFF;
+    font-size: 22px;
+    height: 100%;
+    left: 0;
+    padding: 10px 0 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    -webkit-transition: all 0.3s ;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s ;
+    -o-transition: all 0.3s ;
+    transition: all 0.3s ;
+}
+
+.add-but .addToMore:after{
+		font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	background-color: #CD2549;
+    color: #FFFFFF;
+    font-size: 22px;
+    height: 100%;
+    left: 40px;
+    padding: 10px 0 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    -webkit-transition: all 0.3s ;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s ;
+    -o-transition: all 0.3s ;
+    transition: all 0.3s ;
+}
+
+.addToMore:hover:before{
+	left: -100px;
+}
+
+.addToMore:hover:after{
+	left: 0;
+}
+
+
+.box-item-price{
+	color: #FFFFFF;
+    font-size: 18px;
+    padding: 10px;
 }
 
 /*----THE END-----the content----*/
@@ -302,14 +532,129 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /*---THE END-------footer------*/
+
+
+
+
+
+/*--------------------item page-------------*/
+.content-wrapper{
+	max-width: 960px;
+	margin:15px auto;
+}
+
+.main-content{
+	max-width: 720px;
+}
+
+.breadcrumb{
+	background: none repeat scroll 0 0 #CB2449;
+    border: medium none;
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 17px;
+    margin: 0;
+    padding: 12px 10px 12px 20px;
+     margin: 0 0 32px;
+     text-transform: capitalize;
+}
+
+.breadcrumb a{
+	color: #fff;
+}
+
+.breadcrumb a:hover{
+	color: #000;
+}
+
+.sidebar{
+	width: 230px;
+}
+
+.sidebar .title, .item-page-info .item-title{
+	margin: 0 0 10px;
+    padding: 17px 0;
+}
+
+
+
+
+.item-page-image{
+	float: left;
+    margin: 0 20px 20px 0;
+    position: relative;
+    width: 308px;
+}
+
+.item-page-image img{
+	display: block;
+}
+
+
+.item-page-image figure a{
+	border: 1px solid #E8E8E8;
+	float: left;
+}
+
+.zoom a{
+	margin: 5px 3px 0 0 ;
+}
+
+.zoom-desc{
+	width: 310px;
+}
+
+
+.item-page-info{
+	max-width: 390px;
+}
+
+
+.item-page-desc-quantity, .item-page-price-section, .item-page-info .item-title{
+	border-bottom: 1px solid #E9E9E9;
+}
+
+.item-page-info .item-title{
+	padding-bottom: 40px;
+	margin-bottom: 10px;
+}
+
+.item-page-price-section{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.item-page-price-section strong{
+	font-size: 18px;
+}
+
+
+
+
+.item-page-info{
+	text-transform: capitalize;
+}
+
+.item-page-info a{
+	color: #000;
+}
+
+.category a:hover{
+	color:#CB2449;
+}
+
+
+
+
+
+
+
+/*--------THE END------------item page-------------*/
+
+
+
+
+
+
+
