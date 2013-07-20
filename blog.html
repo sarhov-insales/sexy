@@ -8,14 +8,108 @@
 	
 	<style>
 		#loader{
-			position:fixed;
-			top:0;
-			left:0;
-			z-index: 9999;
-			background-color: #000;
-			width: 100%;
-			height: 100%;
-		}
+position:fixed;
+top:0;
+left:0;
+z-index:9999;
+background-color:rgba(0, 0, 0, 1);
+width:100%;
+height:100%;
+}
+h1.loader{
+text-align:center;
+text-transform:uppercase;
+font-family:'Nunito', sans-serif;
+font-size:28px;
+color:transparent;
+letter-spacing:0.01em;
+width:300px;
+position:absolute;
+height:60px;
+margin-top:-30px;
+left:50%;
+margin-left:-150px;
+top:50%;
+}
+.loader span{
+text-shadow:0 0 2px rgba(204, 208, 212,0.9),    0 15px 25px rgba(0, 0, 0, 0.3),    0 -2px 3px rgba(0, 0, 0, 0.1),    0 -5px 10px rgba(255, 255, 255, 0.5),    0 5px 10px rgba(0, 0, 0, 0.3),    0 3px 4px rgba(255, 255, 255, 0.2),    0 0 20px rgba(255, 255, 255, 0.45);
+/*animation*/
+-webkit-animation:loading 0.85s ease-in-out infinite alternate;
+   -moz-animation:loading 0.85s ease-in-out infinite alternate;
+    -ms-animation:loading 0.85s ease-in-out infinite alternate;
+     -o-animation:loading 0.85s ease-in-out infinite alternate;
+        animation:loading 0.85s ease-in-out infinite alternate;
+}
+@keyframes loading{
+to {text-shadow:
+    0 0 2px rgba(204, 208, 212,0.2),
+    0 0 3px rgba(0, 0, 0, 0.02),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(255, 255, 255, 0),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(255, 255, 255, 0),
+    0 0 0 rgba(255, 255, 255, 0);}
+}
+.loader span:nth-child(2){
+/*animation-delay*/
+-webkit-animation-delay:0.10s;
+   -moz-animation-delay:0.10s;
+    -ms-animation-delay:0.10s;
+     -o-animation-delay:0.10s;
+        animation-delay:0.10s;
+}
+.loader span:nth-child(3){
+/*animation-delay*/
+-webkit-animation-delay:0.20s;
+   -moz-animation-delay:0.20s;
+    -ms-animation-delay:0.20s;
+     -o-animation-delay:0.20s;
+        animation-delay:0.20s;
+}
+.loader span:nth-child(4){
+/*animation-delay*/
+-webkit-animation-delay:0.40s;
+   -moz-animation-delay:0.40s;
+    -ms-animation-delay:0.40s;
+     -o-animation-delay:0.40s;
+        animation-delay:0.40s;
+}
+.loader span:nth-child(5){
+/*animation-delay*/
+-webkit-animation-delay:0.50s;
+   -moz-animation-delay:0.50s;
+    -ms-animation-delay:0.50s;
+     -o-animation-delay:0.50s;
+        animation-delay:0.50s;
+}
+.loader span:nth-child(6){
+/*animation-delay*/
+-webkit-animation-delay:0.60s;
+   -moz-animation-delay:0.60s;
+    -ms-animation-delay:0.60s;
+     -o-animation-delay:0.60s;
+        animation-delay:0.60s;
+}
+.loader span:nth-child(7){
+/*animation-delay*/
+-webkit-animation-delay:0.70s;
+   -moz-animation-delay:0.70s;
+    -ms-animation-delay:0.70s;
+     -o-animation-delay:0.70s;
+        animation-delay:0.70s;
+}
+.loader span:nth-child(8){
+/*animation-delay*/
+-webkit-animation-delay:0.80s;
+   -moz-animation-delay:0.80s;
+    -ms-animation-delay:0.80s;
+     -o-animation-delay:0.80s;
+        animation-delay:0.80s;
+}
+
+		
+
+
 	</style>
 	
 	
@@ -27,16 +121,24 @@
 		// Wait for window load
 		$(window).load(function() {
 			// Animate loader off screen
-			$("#loader").fadeOut();
+			$("#loader").fadeOut('slow');
 		});
 	</script>	
 </head>
 
 <body>
 		
-	
 	<div id="loader">
-
+		<h1 class="loader">
+  <span>з</span>
+  <span>а</span>
+  <span>г</span>
+  <span>р</span>
+  <span>у</span>
+  <span>з</span>
+  <span>к</span>
+  <span>а</span>
+</h1>
 	</div>
 	
 	
