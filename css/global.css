@@ -47,7 +47,9 @@ display: table; /* 2 */
 /*--------------------------------------------------------------------theme globals*/
 
 
-
+p, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
 
 h1, h2, h3, h4, h5, h6{
   color:#2A2A2A;
@@ -63,16 +65,16 @@ color: #fff;
 }
 
 
-.categories a, .top-menu a, .title, .item-title, .tabs a, .box-title, .main-menu a{
+.categories a, .top-menu a, .title, .item-title, .tabs a, .footer-box-title, .main-menu a, .categories-links a, .sub-footer-box-title{
   text-transform: uppercase;
-  font-size: 18px;
 }
 
-.box-title, .title, .itme-title{
-  margin:17px 0 18px;
-  padding: 20px;
+.footer-box-title, .sub-footer-box-title, .title, .itme-title{
+  margin:20px 0 10px;
+  padding: 20px 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
+  font-size: 19px;
 }
 
 input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="tel"]{
@@ -174,6 +176,8 @@ html {
  * Remove default margin.
  */
 
+
+
 body, menu {
     margin: 0;
     padding: 0;
@@ -209,10 +213,6 @@ a:hover {
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
 
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-}
 
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
